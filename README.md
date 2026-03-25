@@ -18,3 +18,22 @@ Terraform → AWS EC2 → Docker → Nginx Container → Website
 terraform init
 terraform plan
 terraform apply
+
+           Terraform
+               |
+               v
+        +--------------+
+        |   AWS EC2    |
+        |   (Ubuntu)   |
+        +--------------+
+               |
+          User Data
+               |
+               v
+            Docker
+               |
+               v
+         Nginx Container
+               |
+               v
+            Website
